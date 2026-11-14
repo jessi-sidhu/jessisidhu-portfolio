@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jessi Sidhu</title>
+  <meta name="description" content="Jessi Sidhu: CS + Statistics @ UBC. Data, ML, and software.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    try { if (localStorage.getItem('js-font') === 'mono') document.documentElement.dataset.font = 'mono'; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="ink" aria-hidden="true"></canvas>
+  <div class="bouquet" id="bouquet" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Sections">
+    <div class="nav-links">
+      <a href="#about" data-page="about">about</a>
+      <a href="#experience" data-page="experience">experience</a>
+      <a href="#projects" data-page="projects">projects</a>
+      <a href="#skills" data-page="skills">skills</a>
+      <a href="#interests" data-page="interests">interests</a>
+    </div>
+    <span class="nav-sep" aria-hidden="true"></span>
+    <div class="nav-icons">
+      <a href="https://github.com/jessi-sidhu" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M9 19c-4 1.3-4-2-6-2.4m12 4.4v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/jessisidhu" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+      </a>
+      <a href="mailto:jessisidhu04@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ABOUT -->
+    <section class="page" id="about" aria-labelledby="name">
+      <div class="hero">
+        <span class="flower f1 sway" data-flower="pink" aria-hidden="true"></span>
+        <span class="flower f2 flutter" data-flower="butterfly" aria-hidden="true"></span>
+        <span class="flower f3 sway slow" data-flower="blue" aria-hidden="true"></span>
+        <span class="flower f4 sway" data-flower="green" aria-hidden="true"></span>
+        <span class="flower f7 float" data-flower="cat" aria-hidden="true"></span>
+        <span class="flower f5 sway" data-flower="yellow" aria-hidden="true"></span>
+        <span class="flower f6 buzz" data-flower="bee" aria-hidden="true"></span>
+        <h1 id="name"><span class="typed" data-text="Jessi Sidhu">Jessi Sidhu</span><span class="caret" aria-hidden="true"></span></h1>
+        <p class="tagline">CS + Stats @ UBC</p>
+        <p class="blurb">
+          I build software end to end, across machine learning, backend systems, and developer tooling.
+          Lately that means ML pipelines, dev tools, and figuring out where AI fits in the workflow.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects" data-page="projects">see my work →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="page" id="experience" aria-labelledby="exp-h">
+      <div class="sheet">
+        <h2 id="exp-h">Experience<span class="flower flutter" data-flower="butterfly" aria-hidden="true"></span></h2>
+        <ol class="timeline">
+          <li>
+            <div class="when">Sep 2026 – present</div>
+            <h3>Royal Bank of Canada</h3>
+            <p class="role">Data Analyst Co-op · Architecture &amp; Strategy, Global Functions Technology</p>
+            <ul>
+              <li>Ran a gap validation across the application portfolio, identifying the apps in scope and overlapping systems that could be consolidated or retired.</li>
+              <li>Building a repo-scanning tool that analyzes codebases to generate architecture solution blueprints.</li>
+              <li>Ship Python tools on an Agile architecture team, automating system documentation and governance reporting.</li>
+              <li>Co-designed production Risk &amp; Compliance systems with enterprise architects, mapping each system to the business capabilities it supports.</li>
+            </ul>
+          </li>
+          <li>
+            <div class="when">May – Aug 2026</div>
+            <h3>UBC Faculty of Applied Science</h3>
+            <p class="role">Research Data &amp; Communications Assistant</p>
+            <ul>
+              <li>Cleaned and merged messy publication, citation &amp; grant data into Python ETL pipelines, automating reporting for 8 academic units.</li>
+              <li>Developed an interactive network analysis tool covering 307 researchers from batched OpenAlex API queries, helping the Faculty target research funding.</li>
+              <li>Presented the tool to the research dean and senior faculty leadership at a research conference.</li>
+            </ul>
+          </li>
+          <li>
+            <div class="when">Mar 2026 – present</div>
+            <h3>Steamoji</h3>
+            <p class="role">STEM Facilitator</p>
+            <ul>
+              <li>Teach Java &amp; Python through hands-on, project-based lessons.</li>
+              <li>Help student teams debug microcontroller code, telling software bugs apart from hardware faults.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2 id="lead-h" class="sub-h">Leadership</h2>
+        <ol class="timeline" aria-labelledby="lead-h">
+          <li>
+            <h3>UBC GirlsSmart4Tech</h3>
+            <p class="role">Workshop Facilitator</p>
+          </li>
+          <li>
+            <h3>UBC Rotaract</h3>
+            <p class="role">Co-Director of Marketing</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="page" id="projects" aria-labelledby="proj-h">
+      <div class="sheet">
+        <h2 id="proj-h">Projects<span class="flower sway" data-flower="pink" aria-hidden="true"></span></h2>
+
+        <article class="project">
+          <header>
+            <h3>Edison</h3>
+            <div class="proj-links">
+              <a href="https://edison-snowy.vercel.app" target="_blank" rel="noopener" aria-label="Edison live demo">live ↗</a>
+              <a href="https://github.com/jessi-sidhu/EDISON" target="_blank" rel="noopener" aria-label="Edison on GitHub">code ↗</a>
+            </div>
+          </header>
+          <p>AI agent that builds working circuits on a 3D breadboard through tool calls. A circuit simulator written from scratch
+            (modified nodal analysis, the method SPICE uses) checks every build. You can also photograph a real breadboard: a vision pipeline rebuilds it on screen and the agent explains what's wrong.
+            Agent builds that pass in the simulator rose from <mark>24/48 to 35–38/48</mark>.</p>
+          <ul class="tags"><li>JavaScript</li><li>LLM tool calling</li><li>Computer vision</li><li>Circuit simulation</li><li>Vercel</li></ul>
+        </article>
+
+        <article class="project">
+          <header>
+            <h3>Plume</h3>
+            <div class="proj-links">
+              <a href="https://github.com/jessi-sidhu/plume" target="_blank" rel="noopener" aria-label="Plume on GitHub">code ↗</a>
+            </div>
+          </header>
+          <p>Query engine in Rust with no SQL: you build plans by chaining DataFrame methods. A fixed-point optimizer runs five rules, including predicate pushdown and column pruning,
+            and Parquet row-group pruning <mark>skips 7 of 8 row groups</mark> on a selective filter. Every query is checked against DuckDB across 208 tests.</p>
+          <ul class="tags"><li>Rust</li><li>Apache Arrow</li><li>Parquet</li><li>DuckDB</li><li>Query optimization</li></ul>
+        </article>
+
+        <article class="project">
+          <header>
+            <h3>Credit Risk Modeling Pipeline</h3>
+            <div class="proj-links">
+              <a href="https://github.com/jessi-sidhu/credit-risk-modeling" target="_blank" rel="noopener" aria-label="Credit Risk on GitHub">code ↗</a>
+            </div>
+          </header>
+          <p>LightGBM model predicting loan defaults on 50k Lending Club loans. A cost-based approval threshold
+            cut expected losses by <mark>30%+</mark> compared with the default cutoff, and drift detection caught a drop that random validation missed.</p>
+          <ul class="tags"><li>Python</li><li>LightGBM</li><li>scikit-learn</li><li>pandas</li><li>pytest</li></ul>
+        </article>
+
+        <article class="project">
+          <header>
+            <h3>ImpactCI</h3>
+            <div class="proj-links">
+              <a href="https://github.com/jessi-sidhu/impactci" target="_blank" rel="noopener" aria-label="ImpactCI on GitHub">code ↗</a>
+            </div>
+          </header>
+          <p>Rust CLI for test impact analysis. It parses Python imports into a dependency graph and runs only the tests a change affects.
+            Cut test time by <mark>45%</mark> across 30 real open-source commits while still catching every planted bug. Shipped as a GitHub Action.</p>
+          <ul class="tags"><li>Rust</li><li>Python</li><li>Git</li><li>GitHub Actions</li></ul>
+        </article>
+
+        <article class="project">
+          <header>
+            <h3>Research Network Explorer</h3>
+          </header>
+          <p>Interactive map of collaboration between 307 UBC Applied Science researchers, built from batched OpenAlex API queries
+            and used to help the Faculty target research funding.</p>
+          <ul class="tags"><li>Python</li><li>OpenAlex API</li><li>Network analysis</li><li>Data viz</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="page" id="skills" aria-labelledby="skills-h">
+      <div class="sheet">
+        <h2 id="skills-h">Skills<span class="flower buzz" data-flower="bee" aria-hidden="true"></span></h2>
+        <div class="langs" role="list">
+          <span role="listitem">.py</span>
+          <span role="listitem">.rs</span>
+          <span role="listitem">.ts</span>
+          <span role="listitem">.js</span>
+          <span role="listitem">.sql</span>
+          <span role="listitem">.java</span>
+          <span role="listitem">.cs</span>
+          <span role="listitem">.cpp</span>
+        </div>
+        <div class="skill-groups">
+          <div>
+            <h4>AI &amp; Machine Learning</h4>
+            <ul class="tags"><li>LLM agents &amp; tool calling</li><li>Computer vision</li><li>LightGBM</li><li>scikit-learn</li><li>SHAP</li><li>PyTorch</li><li>MLflow</li></ul>
+          </div>
+          <div>
+            <h4>Data Engineering &amp; Analytics</h4>
+            <ul class="tags"><li>ETL pipelines</li><li>Data cleaning</li><li>pandas</li><li>Apache Arrow</li><li>Parquet</li><li>DuckDB</li><li>PostgreSQL</li><li>Network analysis</li><li>Data viz</li></ul>
+          </div>
+          <div>
+            <h4>Software &amp; Systems</h4>
+            <ul class="tags"><li>Query engines</li><li>Simulation</li><li>React</li><li>Node.js</li><li>FastAPI</li><li>REST APIs</li><li>Vercel</li></ul>
+          </div>
+          <div>
+            <h4>Cloud &amp; DevOps</h4>
+            <ul class="tags"><li>AWS Lambda</li><li>AWS Bedrock</li><li>Azure ML</li><li>Docker</li><li>GitHub Actions</li><li>CI/CD</li><li>pytest</li><li>Linux</li></ul>
+          </div>
+          <div>
+            <h4>Architecture &amp; Strategy</h4>
+            <ul class="tags"><li>Gap analysis</li><li>Solution blueprints</li><li>System design</li><li>Requirements gathering</li><li>Governance</li><li>Agile</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="page" id="interests" aria-labelledby="int-h">
+      <div class="sheet wide">
+        <h2 id="int-h">Interests<span class="flower sway" data-flower="blue" aria-hidden="true"></span></h2>
+        <p class="hint">hover a bubble to see how things connect</p>
+        <div class="mind" id="mind">
+          <svg class="mind-lines" aria-hidden="true"></svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="font-toggle" id="fontToggle" type="button" aria-pressed="true">
+    Handwriting: <b>on</b>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
